@@ -1,5 +1,9 @@
 # Category API Spec
 
+## Other docs :
+- [User API Documentation](./docs/user-spec.md)
+- [Product API Documentation](./docs/product-spec.md)
+
 ## Create Category API
 
 Endpoint : POST /api/categories

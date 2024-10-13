@@ -1,5 +1,9 @@
 # Product API Spec
 
+## Other docs :
+- [User API Documentation](./docs/user-spec.md)
+- [Category API Documentation](./docs/category-spec.md)
+
 ## Create Product
 
 Endpoint : POST /api/products

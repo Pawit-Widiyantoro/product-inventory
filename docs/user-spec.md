@@ -1,5 +1,9 @@
 # User API Spec
 
+## Other docs :
+- [Category API Documentation](./docs/category-spec.md)
+- [Product API Documentation](./docs/product-spec.md)
+
 ## Register
 
 Endpoint = POST /api/register
