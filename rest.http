@@ -1,0 +1,101 @@
+POST http://127.0.0.1:8000/api/register
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "Jane Doe",
+    "email": "jane@example.com",
+    "password": "password123",
+    "password_confirmation": "password123"
+}
+
+###
+POST http://127.0.0.1:8000/api/login
+Content-Type: application/json
+
+{
+    "email": "john@example.com",
+    "password": "password123"
+}
+
+###
+POST http://127.0.0.1:8000/api/logout
+Authorization: Bearer 10|ysYP6eUSKEsl187xwXJQHvv9XMowCB4vSgxWmQZX0823849f
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/api/categories
+Content-Type: application/json
+Authorization: Bearer 3|h7lij9RADdb4PngMk2DUX96EgdmDRiEu8EAmhnSn6e654b1c
+Accept: application/json
+
+{
+    "name": "",
+    "description": "Category for food and beverages products"
+}
+
+###
+GET http://127.0.0.1:8000/api/categories
+Authorization: Bearer 3|h7lij9RADdb4PngMk2DUX96EgdmDRiEu8EAmhnSn6e654b1c
+Accept: application/json
+
+###
+PUT http://127.0.0.1:8000/api/categories/2
+Content-Type: application/json
+Authorization: Bearer 3|h7lij9RADdb4PngMk2DUX96EgdmDRiEu8EAmhnSn6e654b1c
+Accept: application/json
+
+{
+    "name": "",
+    "description": "Category for electronic products"
+}
+
+###
+DELETE http://127.0.0.1:8000/api/categories/4
+Authorization: Bearer 3|
+Accept: application/json
+
+
+
+###
+POST http://127.0.0.1:8000/api/products
+Content-Type: application/json
+Authorization: Bearer 3|h7lij9RADdb4PngMk2DUX96EgdmDRiEu8EAmhnSn6e654b1c
+Accept: application/json
+
+{
+    "name": "Laptop gaming",
+    "description": "High-performance laptop",
+    "price": 1299.99,
+    "stock": 10,
+    "category_id": 4
+}
+
+###
+GET http://127.0.0.1:8000/api/products?size=2
+Authorization: Bearer 3|h7lij9RADdb4PngMk2DUX96EgdmDRiEu8EAmhnSn6e654b1c
+Accept: application/json
+
+###
+GET http://127.0.0.1:8000/api/products/3
+Authorization: Bearer 3|
+Accept: application/json
+
+###
+PUT http://127.0.0.1:8000/api/products/2
+Content-Type: application/json
+Authorization: Bearer 3|h7lij9RADdb4PngMk2DUX96EgdmDRiEu8EAmhnSn6e654b1c
+Accept: application/json
+
+{
+    "name": "Laptop Gaming",
+    "description": "High-performance laptop",
+    "price": 1299.99,
+    "stock": 10,
+    "category_id": 1
+}
+
+###
+DELETE http://127.0.0.1:8000/api/products/3
+Authorization: Bearer 3|
+Accept: application/json
